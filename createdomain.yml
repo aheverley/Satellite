@@ -5,7 +5,7 @@
   tasks:
   - name: Create a domain
     redhat.satellite.domain:
-      name: "{{ DOMAIN_NAME }"
+      name: "{{ DOMAIN_NAME }}"
       description: "{{ Domain_DESCRIPTION }}"
       locations:
         - "Default Location"
