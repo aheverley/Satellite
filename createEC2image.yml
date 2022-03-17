@@ -12,6 +12,6 @@
       username: admin
       password: "{{ ADMIN_PASSWORD }}"
       server_url: "https://satellite.example.com"
-      operatingsystem: "RHEL 7"
+      operatingsystem: "RedHat 7.9"
       compute_resource: "EC2_compute_resource"
       architecture: "x86_64"
