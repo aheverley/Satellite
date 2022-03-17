@@ -1,6 +1,0 @@
----
-- name: Adding EC2 Connection
-  hosts: all
-  gather_facts: false
-  roles:
-  - satellite_ec2
