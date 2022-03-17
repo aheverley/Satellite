@@ -1,12 +1,17 @@
-- name: create Image for EC2
-  image:
-     name: "RHEL_TEST"
-     image_uuid: "ami-081bad94176ce3384"
-     image_username: "rhel"
-     image_password: "redhat123$"
-     username: admin
-     password: "{{ ADMIN_PASSWORD }}"
-     server_url: "https://satellite.example.com"
-     operatingsystem: "RHEL 7"
-     compute_resource: "AWS"
-     architecture: "x86_64"
+---
+- name: Add EC2 Image
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: create Image for EC2
+    image:
+      name: "RHEL_TEST"
+      image_uuid: "ami-081bad94176ce3384"
+      image_username: "rhel"
+      image_password: "redhat123$"
+      username: admin
+      password: "{{ ADMIN_PASSWORD }}"
+      server_url: "https://satellite.example.com"
+      operatingsystem: "RHEL 7"
+      compute_resource: "AWS"
+      architecture: "x86_64"
