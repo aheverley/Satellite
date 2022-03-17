@@ -13,5 +13,5 @@
       password: "{{ ADMIN_PASSWORD }}"
       server_url: "https://satellite.example.com"
       operatingsystem: "RHEL 7"
-      compute_resource: "AWS"
+      compute_resource: "EC2_compute_resource"
       architecture: "x86_64"
