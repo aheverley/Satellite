@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
   - name: create Image for EC2
-    image:
+    redhat.satellite.image:
       name: "RHEL_TEST"
       image_uuid: "ami-081bad94176ce3384"
       image_username: "rhel"
