@@ -1,0 +1,9 @@
+---
+- name: Configure Cloud Connector
+  hosts: satellite.example.com
+  roles:
+    - role: redhat.satellite_operations.cloud_connector
+      vars:
+        satellite_cloud_connector_url: https://satellite.example.com
+        satellite_cloud_connector_user: admin
+        satellite_cloud_connector_password: "{{ password }}"
