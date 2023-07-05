@@ -6,4 +6,4 @@
         satellite_installer_scenario: satellite
         satellite_installer_options:
           - '--foreman-initial-organization "Technology"'
-          - '--foreman-initial-admin-password redhat123$'
+          - '--foreman-initial-admin-password "redhat123$"'
