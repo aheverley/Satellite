@@ -1,5 +1,5 @@
 - name: Install Satellite Server
-  hosts: satellite.example.com
+  hosts: all
   roles:
     - role: redhat.satellite_operations.installer
       vars:
