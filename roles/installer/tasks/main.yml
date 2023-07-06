@@ -1,6 +1,6 @@
 ---
 - name: Disable all RHSM repositories
-  community.general.rhsm_repository:
+  rhsm_repository:
     name: '*'
     state: disabled
 
