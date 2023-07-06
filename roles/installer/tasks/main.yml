@@ -5,19 +5,19 @@
     state: disabled
 
 - name: Enable a RHSM repository
-  community.general.rhsm_repository:
+  rhsm_repository:
     name: rhel-8-for-x86_64-baseos-rpms
 
 - name: Enable a RHSM repository
-  community.general.rhsm_repository:
+  rhsm_repository:
     name: rhel-8-for-x86_64-appstream-rpms
 
 - name: Enable a RHSM repository
-  community.general.rhsm_repository:
+  rhsm_repository:
     name: satellite-6.13-for-rhel-8-x86_64-rpms
 
 - name: Enable a RHSM repository
-  community.general.rhsm_repository:
+  rhsm_repository:
     name: satellite-maintenance-6.13-for-rhel-8-x86_64-rpms
 
 - name: Check that necessary variables are defined
